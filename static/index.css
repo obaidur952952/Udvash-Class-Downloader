@@ -1,61 +1,66 @@
-/* Styling for the body */
+/* index.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
 body {
-    background-color: #f0f0f0; /* Set a light background color */
-    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    min-height: 100vh;
+    background: #000;
+    color: #fff;
 }
 
-/* Styling for the header */
 h1 {
-    color: #009688; /* Unique color for the header text */
-    font-size: 36px;
+    font-size: 2em;
+    margin-top: 20px;
 }
 
-/* Styling for the "created by" link */
-h4 a#glow {
-    color: #ff5722; /* Unique color for the link text */
-    text-decoration: none; /* Remove underlines from links */
-    animation: glow 2s infinite; /* Add a glowing animation */
+h4 {
+    font-size: 1em;
+    color: #0f0;
 }
 
-@keyframes glow {
-    0% {
-        color: #ff5722;
-        text-shadow: none;
-    }
-    50% {
-        color: #ff9800;
-        text-shadow: 0 0 5px #ff5722;
-    }
-    100% {
-        color: #ff5722;
-        text-shadow: none;
-    }
+#glow {
+    text-decoration: none;
+    animation: animate 4s linear infinite;
 }
 
-/* Styling for the form elements */
-input[type="url"], input[type="password"] {
-    width: 80%;
+form {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 100%;
     padding: 10px;
     margin: 5px;
-    border: 2px solid #009688; /* Unique color for input borders */
-    border-radius: 5px;
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    background: #333;
+    color: #fff;
+    font-weight: 500;
 }
 
-input#submit_button {
-    background-color: #009688; /* Unique color for the submit button */
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+#submit_button {
+    padding: 10px;
+    background: #0f0;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.35em;
+    letter-spacing: 0.05em;
     cursor: pointer;
 }
 
-/* Styling for the footer */
 footer {
-    background-color: #333; /* Dark background color for the footer */
-    color: #fff; /* White text color */
-    padding: 10px;
-    font-size: 18px;
+    margin-top: 20px;
 }
