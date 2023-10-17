@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uvdownloader</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
-
-
-    
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dark-mode.css') }>
+</head>
 
 <body>
+    <button id="dark-mode-button" class="dark-mode-button">Dark Mode: Off</button>
     <h1>Udvash Video Downloader</h1>
-    <h4>created by: <a id=glow href="https://youtube.com/@Hsc_admission23" download>Mission HSC</a></h4>
+    <h4>created by: <a id="glow" href="https://youtube.com/@Hsc_admission23" download>Mission HSC</a></h4>
     <form action="data" method="post">
         <input name="url" type="url" placeholder="Enter video link">
         <br>
@@ -22,6 +22,17 @@
         <input type="submit" value="Download" id="submit_button">
     </form>
     <h4>Join Us: <a href="https://facebook.com/groups/780781737137544/">Facebook Group</a></h4>
+
+    <footer>
+        &copy; 2023 Copyright by Zihan
+    </footer>
+    
+    <!-- ... Other HTML content ... -->
+<button id="dark-mode-button" class="dark-mode-button">Dark Mode: Off</button>
+<!-- ... Other HTML content ... -->
+
+<script src="{{ url_for('static', filename='dark-mode.js') }}"></script>
 </body>
 
-</html>
+
+        </html>
