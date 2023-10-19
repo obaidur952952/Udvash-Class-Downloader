@@ -1,133 +1,80 @@
-/* Styling for the body */
+/* Styling for the body with color animation */
 body {
-  animation: changeBodyColor 60s infinite;
+  animation: changeBackgroundColor 60s infinite;
+  transition: background-color 1s ease;
+  background-color: #009688; /* Start with a teal background */
 }
 
-@keyframes changeBodyColor {
-  0% {
-    background-color: #f2c200; /* Start with a gold background */
+@keyframes changeBackgroundColor {
+  0%, 100% {
+    background-color: #009688; /* Teal */
   }
   25% {
-    background-color: #0065a4; /* Change to a deep blue at 15 seconds */
+    background-color: #ff6f61; /* Coral */
   }
   50% {
-    background-color: #ff6f61; /* Change to a coral color at 30 seconds */
+    background-color: #0065a4; /* Deep Blue */
   }
   75% {
-    background-color: #a22a2a; /* Change to a dark red at 45 seconds */
-  }
-  100% {
-    background-color: #f2c200; /* Return to gold at 60 seconds (1 minute) */
+    background-color: #f2c200; /* Gold */
   }
 }
 
-/* Styling for the header */
+/* Styling for the header text */
 h1 {
+  color: #ff5722; /* Header text color (Deep Orange) */
+  font-size: 36px;
   animation: changeHeaderColor 60s infinite;
+  transition: color 1s ease;
 }
 
 @keyframes changeHeaderColor {
-  0% {
-    color: #009688; /* Start with the header color */
+  0%, 100% {
+    color: #ff5722; /* Deep Orange */
   }
   25% {
-    color: #ff5722; /* Change to a different color at 15 seconds */
+    color: #f2c200; /* Gold */
   }
   50% {
-    color: #0065a4; /* Change to another color at 30 seconds */
+    color: #009688; /* Teal */
   }
   75% {
-    color: #ff6f61; /* Change to a different color at 45 seconds */
-  }
-  100% {
-    color: #009688; /* Return to the original color at 60 seconds (1 minute) */
+    color: #0065a4; /* Deep Blue */
   }
 }
 
 /* Styling for the "created by" link */
 h4 a#glow {
-  animation: glow 2s infinite; /* Add a glowing animation */
+  color: #f2c200; /* Link text color (Gold) */
+  text-decoration: none;
+  animation: glow 2s infinite;
+  transition: color 1s ease;
 }
 
 @keyframes glow {
-  0% {
-    color: #ff5722;
-    text-shadow: none;
+  0%, 100% {
+    color: #f2c200; /* Gold */
   }
   50% {
-    color: #ff9800;
-    text-shadow: 0 0 5px #ff5722;
-  }
-  100% {
-    color: #ff5722;
-    text-shadow: none;
+    color: #ff5722; /* Deep Orange */
   }
 }
 
 /* Styling for the form elements */
 input[type="url"], input[type="password"] {
-  animation: changeInputColor 60s infinite;
-}
-
-@keyframes changeInputColor {
-  0% {
-    border: 2px solid #009688; /* Start with the input border color */
-  }
-  25% {
-    border: 2px solid #ff5722; /* Change to a different border color at 15 seconds */
-  }
-  50% {
-    border: 2px solid #0065a4; /* Change to another border color at 30 seconds */
-  }
-  75% {
-    border: 2px solid #ff6f61; /* Change to a different border color at 45 seconds */
-  }
-  100% {
-    border: 2px solid #009688; /* Return to the original border color at 60 seconds (1 minute) */
-  }
+  border: 2px solid #009688; /* Input border color (Teal) */
+  transition: border-color 1s ease;
 }
 
 input#submit_button {
-  animation: changeButtonColor 60s infinite;
-}
-
-@keyframes changeButtonColor {
-  0% {
-    background-color: #009688; /* Start with the button background color */
-  }
-  25% {
-    background-color: #ff5722; /* Change to a different background color at 15 seconds */
-  }
-  50% {
-    background-color: #0065a4; /* Change to another background color at 30 seconds */
-  }
-  75% {
-    background-color: #ff6f61; /* Change to a different background color at 45 seconds */
-  }
-  100% {
-    background-color: #009688; /* Return to the original background color at 60 seconds (1 minute) */
-  }
+  background-color: #009688; /* Button background color (Teal) */
+  color: #fff; /* Button text color (White) */
+  transition: background-color 1s ease, color 1s ease;
 }
 
 /* Styling for the footer */
 footer {
-  animation: changeFooterColor 60s infinite;
-}
-
-@keyframes changeFooterColor {
-  0% {
-    background-color: #333; /* Start with the footer background color */
-  }
-  25% {
-    background-color: #ff5722; /* Change to a different background color at 15 seconds */
-  }
-  50% {
-    background-color: #0065a4; /* Change to another background color at 30 seconds */
-  }
-  75% {
-    background-color: #ff6f61; /* Change to a different background color at 45 seconds */
-  }
-  100% {
-    background-color: #333; /* Return to the original background color at 60 seconds (1 minute) */
-  }
+  background-color: #333; /* Footer background color (Dark Gray) */
+  color: #fff; /* Footer text color (White) */
+  transition: background-color 1s ease;
 }
