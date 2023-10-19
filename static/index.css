@@ -1,9 +1,26 @@
 /* Styling for the body */
 body {
-    background-color: #f0f0f0; /* Set a light background color */
-    font-family: Arial, sans-serif;
-    text-align: center;
+  animation: changeColor 60s infinite;
 }
+
+@keyframes changeColor {
+  0% {
+    background-color: #ff0000; /* Start with a red background */
+  }
+  25% {
+    background-color: #00ff00; /* Change to green at 15 seconds */
+  }
+  50% {
+    background-color: #0000ff; /* Change to blue at 30 seconds */
+  }
+  75% {
+    background-color: #ff00ff; /* Change to magenta at 45 seconds */
+  }
+  100% {
+    background-color: #ff0000; /* Return to red at 60 seconds (1 minute) */
+  }
+}
+
 
 /* Styling for the header */
 h1 {
