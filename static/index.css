@@ -1,118 +1,133 @@
 /* Styling for the body */
 body {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       min-height: 100vh;
-       background: #000;
-   }
+  animation: changeBodyColor 60s infinite;
+}
 
-   .container {
-       position: relative;
-       overflow: hidden;
-       height: 100vh;
-       animation: animate 4s linear infinite;
-   }
-
-   @keyframes animate {
-       0% {
-           filter: hue-rotate(0deg);
-       }
-
-       100% {
-           filter: hue-rotate(360deg);
-       }
-   }
-
-   .row {
-       display: inline-flex;
-       margin-left: -50px;
-       margin-top: -32px;
-       overflow: hidden;
-   }
-
-   .row:nth-child(even) {
-       margin-left: 1px;
-   }
-
-   .hexagon {
-       position: relative;
-       height: 110px;
-       width: 100px;
-       background: #111;
-       margin: 1px;
-       clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-       transition: 2s;
-   }
-
-   .hexagon:before {
-       content: '';
-       position: absolute;
-       top: 0;
-       left: 0;
-       width: 50%;
-       height: 100%;
-       pointer-events: none;
-       background: rgba(255, 255, 255, 0.02);
-   }
-
-   .hexagon:hover {
-       transition: 0s;
-       background: #0f0;
-       cursor: alias;
-     }
+@keyframes changeBodyColor {
+  0% {
+    background-color: #f2c200; /* Start with a gold background */
+  }
+  25% {
+    background-color: #0065a4; /* Change to a deep blue at 15 seconds */
+  }
+  50% {
+    background-color: #ff6f61; /* Change to a coral color at 30 seconds */
+  }
+  75% {
+    background-color: #a22a2a; /* Change to a dark red at 45 seconds */
+  }
+  100% {
+    background-color: #f2c200; /* Return to gold at 60 seconds (1 minute) */
+  }
+}
 
 /* Styling for the header */
 h1 {
-    color: #009688; /* Unique color for the header text */
-    font-size: 36px;
+  animation: changeHeaderColor 60s infinite;
+}
+
+@keyframes changeHeaderColor {
+  0% {
+    color: #009688; /* Start with the header color */
+  }
+  25% {
+    color: #ff5722; /* Change to a different color at 15 seconds */
+  }
+  50% {
+    color: #0065a4; /* Change to another color at 30 seconds */
+  }
+  75% {
+    color: #ff6f61; /* Change to a different color at 45 seconds */
+  }
+  100% {
+    color: #009688; /* Return to the original color at 60 seconds (1 minute) */
+  }
 }
 
 /* Styling for the "created by" link */
 h4 a#glow {
-    color: #ff5722; /* Unique color for the link text */
-    text-decoration: none; /* Remove underlines from links */
-    animation: glow 2s infinite; /* Add a glowing animation */
+  animation: glow 2s infinite; /* Add a glowing animation */
 }
 
 @keyframes glow {
-    0% {
-        color: #ff5722;
-        text-shadow: none;
-    }
-    50% {
-        color: #ff9800;
-        text-shadow: 0 0 5px #ff5722;
-    }
-    100% {
-        color: #ff5722;
-        text-shadow: none;
-    }
+  0% {
+    color: #ff5722;
+    text-shadow: none;
+  }
+  50% {
+    color: #ff9800;
+    text-shadow: 0 0 5px #ff5722;
+  }
+  100% {
+    color: #ff5722;
+    text-shadow: none;
+  }
 }
 
 /* Styling for the form elements */
 input[type="url"], input[type="password"] {
-    width: 80%;
-    padding: 10px;
-    margin: 5px;
-    border: 2px solid #009688; /* Unique color for input borders */
-    border-radius: 5px;
+  animation: changeInputColor 60s infinite;
+}
+
+@keyframes changeInputColor {
+  0% {
+    border: 2px solid #009688; /* Start with the input border color */
+  }
+  25% {
+    border: 2px solid #ff5722; /* Change to a different border color at 15 seconds */
+  }
+  50% {
+    border: 2px solid #0065a4; /* Change to another border color at 30 seconds */
+  }
+  75% {
+    border: 2px solid #ff6f61; /* Change to a different border color at 45 seconds */
+  }
+  100% {
+    border: 2px solid #009688; /* Return to the original border color at 60 seconds (1 minute) */
+  }
 }
 
 input#submit_button {
-    background-color: #009688; /* Unique color for the submit button */
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  animation: changeButtonColor 60s infinite;
+}
+
+@keyframes changeButtonColor {
+  0% {
+    background-color: #009688; /* Start with the button background color */
+  }
+  25% {
+    background-color: #ff5722; /* Change to a different background color at 15 seconds */
+  }
+  50% {
+    background-color: #0065a4; /* Change to another background color at 30 seconds */
+  }
+  75% {
+    background-color: #ff6f61; /* Change to a different background color at 45 seconds */
+  }
+  100% {
+    background-color: #009688; /* Return to the original background color at 60 seconds (1 minute) */
+  }
 }
 
 /* Styling for the footer */
 footer {
-    background-color: #333; /* Dark background color for the footer */
-    color: #fff; /* White text color */
-    padding: 10px;
-    font-size: 18px;
+  animation: changeFooterColor 60s infinite;
+}
+
+@keyframes changeFooterColor {
+  0% {
+    background-color: #333; /* Start with the footer background color */
   }
+  25% {
+    background-color: #ff5722; /* Change to a different background color at 15 seconds */
+  }
+  50% {
+    background-color: #0065a4; /* Change to another background color at 30 seconds */
+  }
+  75% {
+    background-color: #ff6f61; /* Change to a different background color at 45 seconds */
+  }
+  100% {
+    background-color: #333; /* Return to the original background color at 60 seconds (1 minute) */
+  }
+}
