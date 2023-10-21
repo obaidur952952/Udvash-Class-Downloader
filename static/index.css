@@ -1,61 +1,74 @@
+/* Reset default margin and padding for consistent styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Styling for the body */
 body {
-    background-color: #f0f0f0; /* Set a light background color */
-    font-family: Arial, sans-serif;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
 }
 
 /* Styling for the header */
 h1 {
-    color: #009688; /* Unique color for the header text */
-    font-size: 36px;
+  color: #009688;
+  font-size: 36px;
+  margin-top: 20px;
 }
 
 /* Styling for the "created by" link */
 h4 a#glow {
-    color: #ff5722; /* Unique color for the link text */
-    text-decoration: none; /* Remove underlines from links */
-    animation: glow 2s infinite; /* Add a glowing animation */
+  color: #ff5722;
+  text-decoration: none;
+  animation: glow 2s infinite;
 }
 
 @keyframes glow {
-    0% {
-        color: #ff5722;
-        text-shadow: none;
-    }
-    50% {
-        color: #ff9800;
-        text-shadow: 0 0 5px #ff5722;
-    }
-    100% {
-        color: #ff5722;
-        text-shadow: none;
-    }
+  0% {
+    color: #ff5722;
+    text-shadow: none;
+  }
+  50% {
+    color: #ff9800;
+    text-shadow: 0 0 5px #ff5722;
+  }
+  100% {
+    color: #ff5722;
+    text-shadow: none;
+  }
 }
 
 /* Styling for the form elements */
-input[type="url"], input[type="password"] {
-    width: 80%;
-    padding: 10px;
-    margin: 5px;
-    border: 2px solid #009688; /* Unique color for input borders */
-    border-radius: 5px;
+form {
+  margin: 20px;
+}
+
+input[type="url"],
+input[type="password"] {
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #009688;
+  border-radius: 5px;
 }
 
 input#submit_button {
-    background-color: #009688; /* Unique color for the submit button */
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #009688;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* Styling for the footer */
 footer {
-    background-color: #333; /* Dark background color for the footer */
-    color: #fff; /* White text color */
-    padding: 10px;
-    font-size: 18px;
-  }
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+}
