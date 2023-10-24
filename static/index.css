@@ -1,74 +1,56 @@
-/* Reset default margin and padding for consistent styling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Styling for the body */
+/* Reset some default styles and set a background color for the body */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Change to your desired background color */
+    font-family: Arial, sans-serif; /* Choose your preferred font-family */
 }
 
-/* Styling for the header */
+/* Style the top bar */
+.top-bar {
+    background-color: #333; /* Change to your desired color */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style the main content */
 h1 {
-  color: #009688;
-  font-size: 36px;
-  margin-top: 20px;
+    text-align: center;
 }
 
-/* Styling for the "created by" link */
-h4 a#glow {
-  color: #ff5722;
-  text-decoration: none;
-  animation: glow 2s infinite;
-}
-
-@keyframes glow {
-  0% {
-    color: #ff5722;
-    text-shadow: none;
-  }
-  50% {
-    color: #ff9800;
-    text-shadow: 0 0 5px #ff5722;
-  }
-  100% {
-    color: #ff5722;
-    text-shadow: none;
-  }
-}
-
-/* Styling for the form elements */
+/* Style the form */
 form {
-  margin: 20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 300px; /* Adjust the width as needed */
 }
 
-input[type="url"],
-input[type="password"] {
-  width: 80%;
-  padding: 10px;
-  margin: 10px;
-  border: 2px solid #009688;
-  border-radius: 5px;
+input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
 }
 
-input#submit_button {
-  background-color: #009688;
-  color: #fff;
-  font-size: 18px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+#submit_button {
+    background-color: #333; /* Change to your desired color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
 }
 
-/* Styling for the footer */
+#submit_button:hover {
+    background-color: #555; /* Change to your desired hover color */
+}
+
+/* Style the footer */
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  font-size: 18px;
+    background-color: #333; /* Change to your desired color */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
