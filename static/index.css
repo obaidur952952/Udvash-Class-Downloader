@@ -4,6 +4,10 @@ body {
     padding: 0;
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 
 /* Style the top bar */
@@ -14,18 +18,11 @@ body {
     padding: 10px;
 }
 
-/* Style the main content */
-h1 {
+/* Center the main content */
+.centered {
     text-align: center;
-    color: #333; /* Choose a color that complements the background */
-    font-size: 24px;
-}
-
-/* Style the form */
-form {
-    text-align: center;
-    margin: 20px auto;
-    max-width: 300px;
+    max-width: 400px; /* Adjust as needed */
+    margin: 0 auto;
     padding: 20px;
     background-color: #f5f5f5;
     border-radius: 10px;
@@ -60,19 +57,4 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Add some color to the links in the footer */
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Style the footer links on hover */
-footer a:hover {
-    text-decoration: underline;
-    color: #ffcc00; /* Choose your desired link hover color */
 }
