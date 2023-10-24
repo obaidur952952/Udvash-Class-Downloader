@@ -1,56 +1,52 @@
-/* Reset some default styles and set a background color for the body */
-body {
+/* Reset some default browser styles */
+body, h1, h4, form, input {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
-    line-height: 1.4; /* Adjust the line height as needed */
 }
 
-/* Style the top bar */
+/* Apply a background color to the top bar */
 .top-bar {
     background-color: #333;
     color: #fff;
-    text-align: center;
     padding: 10px;
+    text-align: center;
 }
 
-/* Center the main content */
-.centered {
+/* Style the h1 and h4 headings */
+h1 {
+    font-size: 28px;
     text-align: center;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h4 {
+    font-size: 18px;
+    text-align: center;
 }
 
 /* Style the form */
-input {
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the input fields and submit button */
+input[type="url"],
+input[type="password"] {
     display: block;
-    width: 100%;
-    margin: 10px 0;
+    margin: 10px auto;
     padding: 10px;
+    width: 80%;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 #submit_button {
-    background-color: #ffcc00;
+    background-color: #333;
     color: #fff;
-    border: none;
     padding: 10px 20px;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-#submit_button:hover {
-    background-color: #ff9900;
 }
 
 /* Style the footer */
@@ -61,14 +57,12 @@ footer {
     padding: 10px;
 }
 
-/* Add some color to the links in the footer */
-footer a {
-    color: #ffcc00;
+/* Style hyperlinks */
+a {
+    color: #0073e6;
     text-decoration: none;
 }
 
-/* Style the footer links on hover */
-footer a:hover {
+a:hover {
     text-decoration: underline;
-    color: #ff9900;
 }
