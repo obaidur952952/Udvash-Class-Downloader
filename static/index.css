@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #0088cc; /* Choose your desired background color */
+    background-color: #f0f0f0;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
@@ -24,11 +24,12 @@ body {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #ffffff; /* Content background color */
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Style the form */
 input {
     display: block;
     width: 100%;
@@ -39,7 +40,7 @@ input {
 }
 
 #submit_button {
-    background-color: #ff6600; /* Button background color */
+    background-color: #ffcc00;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -48,7 +49,7 @@ input {
 }
 
 #submit_button:hover {
-    background-color: #ff3300; /* Button hover background color */
+    background-color: #ff9900;
 }
 
 /* Style the footer */
@@ -57,4 +58,16 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
+}
+
+/* Add some color to the links in the footer */
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+/* Style the footer links on hover */
+footer a:hover {
+    text-decoration: underline;
+    color: #ff9900;
 }
