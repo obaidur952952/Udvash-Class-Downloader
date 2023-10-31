@@ -19,7 +19,7 @@ Clone the repository
 Go to the project directory
 
 ```bash
-  Udvash-Class-Downloader
+ cd Udvash-Class-Downloader
 ```
 
 Install dependencies
