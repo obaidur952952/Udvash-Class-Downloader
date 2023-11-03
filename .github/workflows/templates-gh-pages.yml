@@ -31,7 +31,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build with templates
-        uses: actions/templates-build-pages@v1
+        uses: actions/Udvash-Class-downloader-build-pages@v1
         with:
           source: ./
           destination: ./_site
